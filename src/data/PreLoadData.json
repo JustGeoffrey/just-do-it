@@ -1,43 +1,42 @@
 [
-    {
-      "id": 1,
-      "tasktitle": "Create Wireframes",
-      "taskdesc": "Create wireframes for the project using Figma",
-      "duedate": "26/07/24",
-      "assignedto": "Prakash Singh",
-      "status": "In-progress"
-    },
-    {
-      "id": 2,
-      "tasktitle": "Set up GitHub",
-      "taskdesc": "Set up a Git Hub repository with the name To-do and share the link of the repo with the team",
-      "duedate": "26/07/24",
-      "assignedto": "Wenting Zhou",
-      "status": "In-progress"
-    },
-    {
-      "id": 3,
-      "tasktitle": "Create DB architecture",
-      "taskdesc": "Create architecture for the Database and create the tables and stored procerdures",
-      "duedate": "26/07/24",
-      "assignedto": "Shreyashi Paul",
-      "status": "completed"
-    },
-    {
-      "id": 4,
-      "tasktitle": "HTML/CSS model for the website",
-      "taskdesc": "Create the basic HTML/CSS for the index.html",
-      "duedate": "26/07/24",
-      "assignedto": "Aime Shimirwa",
-      "status": "In-progress"
-    },
-    {
-      "id": 5,
-      "tasktitle": "Create  a project plan",
-      "taskdesc": "Create a project plan with due dates and assign it to team members",
-      "duedate": "26/07/24",
-      "assignedto": "Prakash Singh",
-      "status": "Venkata Silpa Kopparth"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Create Wireframes",
+    "desc": "Create wireframes for the project using Figma",
+    "dueDate": "2024-06-23",
+    "assignedTo": "Prakash Singh",
+    "status": "in-progress"
+  },
+  {
+    "id": 2,
+    "title": "Set up GitHub",
+    "desc": "Set up a Git Hub repository with the name To-do and share the link of the repo with the team",
+    "dueDate": "2024-06-24",
+    "assignedTo": "Wenting Zhou",
+    "status": "in-progress"
+  },
+  {
+    "id": 3,
+    "title": "Create DB architecture",
+    "desc": "Create architecture for the Database and create the tables and stored procerdures",
+    "duedate": "2024-06-30",
+    "assignedTo": "Shreyashi Paul",
+    "status": "completed"
+  },
+  {
+    "id": 4,
+    "title": "HTML/CSS model for the website",
+    "desc": "Create the basic HTML/CSS for the index.html",
+    "dueDate": "2024-08-02",
+    "assignedTo": "Aime Shimirwa",
+    "status": "in-progress"
+  },
+  {
+    "id": 5,
+    "title": "Create  a project plan",
+    "desc": "Create a project plan with due dates and assign it to team members",
+    "dueDate": "2024-06-23",
+    "assignedTo": "Prakash Singh",
+    "status": "review"
+  }
+]

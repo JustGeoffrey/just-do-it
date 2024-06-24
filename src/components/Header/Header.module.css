@@ -1,14 +1,15 @@
- @import '../../CssVariables.css';
+@import "../../CssVariables.css";
 
 .header {
-    width: 100%;
-    text-align: center;
-    background-color: var(--color-bg);
-    padding: 20px 0;
-  }
-  
-  .headerImage {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-bg);
+  padding: 20px 0;
+}
+
+.headerImage {
+  height: auto;
+  max-width: 100%;
+}
+
+ 
