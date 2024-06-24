@@ -8,6 +8,9 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit }) => {
   const [assignedTo, setAssignedTo] = useState("");
   const [status, setStatus] = useState("in-progress");
 
+  const minDate = new Date('January 01, 2000')
+  const maxDate = new Date('December 31, 3000')
+
   useEffect(() => {
     if (taskToEdit) {
       setTitle(taskToEdit.title || "");
@@ -52,7 +55,14 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit }) => {
           type="text"
           className="form-control"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => {
+            setTitle(e.target.value)
+            // This extra line is required to remove the validity message
+            e.target.setCustomValidity('')
+          }}
+          onInvalid={(e) => {e.target.setCustomValidity('Please enter a title')}}
+          required
+          // pattern=""
         />
       </div>
       <div className="form-group">
@@ -71,6 +81,9 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit }) => {
           className="form-control"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
+          required
+          min='2000-01-01'
+          max='3000-12-31'
         />
       </div>
       <div className="form-group">
