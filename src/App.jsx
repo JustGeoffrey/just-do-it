@@ -9,7 +9,25 @@ import ListTask from "./components/ListTask/ListTask";
 function App() {
   const [toDoList, setToDoList] = useState([]);
 
+  const [apiData, setApiData] = useState()
+  const url = 'https://onlineprojectsgit.github.io/API/WDEndpoint.json'
+
   useEffect(() => {
+
+    // Grab information from the Endpoint
+    const fetchData = async () => {
+      try{      
+        const response = await fetch(url)
+        const data = await response.json()
+        setApiData(data)
+      }
+      catch (error) {
+        console.error(error)
+      }
+    }
+
+    fetchData()
+
     const storedTasks = JSON.parse(localStorage.getItem('toDoList'));
     if (storedTasks && storedTasks.length > 0) {
       setToDoList(storedTasks);
