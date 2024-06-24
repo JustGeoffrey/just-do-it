@@ -1,0 +1,15 @@
+/* AddTaskForm.module.css */
+@import '../../CssVariables.css';
+
+
+.button {
+    /* Add your button styles here */
+    background-color: var(--color-bg);
+    color: white;
+    font-family: var(myFirstFont);
+}
+
+.button:hover {
+    background-color: var(--color-primary);
+    color: white;
+}

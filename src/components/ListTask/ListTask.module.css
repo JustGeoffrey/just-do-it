@@ -1,0 +1,14 @@
+@import "../../CssVariables.css";
+
+.container {
+  position: absolute;
+}
+ 
+.addTaskButton {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
+.addTaskButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

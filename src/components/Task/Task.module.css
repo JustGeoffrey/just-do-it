@@ -1,0 +1,39 @@
+@import "../../CssVariables.css";
+
+.cardbg {
+  background-color: var(--color-primary);
+}
+
+.iconcolor {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.iconcolor:hover {
+  background-color: var(--color-white);
+  color: var(--color-text);
+  transform: scale(1.1); /* Slightly increase the size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 3px; /* Optional: add some rounding */
+}
+
+.inProgress {
+  color: yellow; /* Green color for 'in-progress' */
+  font-size: medium;
+}
+
+.completed {
+  color: green; /* Blue color for 'completed' */
+  font-size: medium;
+}
+
+.inReview {
+  color: red; /* Red color for 'in review' */
+  font-size: medium;
+}
+
+.defaultColor {
+  color: black; /* Default color if status doesn't match any case */
+  font-size: medium;
+}

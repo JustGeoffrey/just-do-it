@@ -1,14 +1,17 @@
 :root {
-    /* Colours */
-    --color-text: #5b4f47;
-    --color-primary: #DDC1A7;
-    --color-secondary: #5B4F47;
-    --color-white: #fff;
-    --color-black: #000;
-    --color-bg: #745e4d;
-  
-    /*Fonts*/
-    --colour-font : SortsMillGoudyt;
-  }
-  
-  
+  /* Colours */
+  --color-text: #5b4f47;
+  --color-primary: #ddc1a7;
+  --color-secondary: #5b4f47;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-bg: #745e4d;
+
+  /*Fonts*/
+  --colour-font: myFirstFont, sans-serif, Arial;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("./assets/fonts/SortsMillGoudy-Regular.ttf");
+}
