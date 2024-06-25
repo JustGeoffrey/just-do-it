@@ -4,7 +4,7 @@ import styles from "./ListTask.module.css";
 import TaskStatus from "../../components/TaskStatus/TaskStatus";
 import AddTaskForm from "../AddTaskForm/AddTaskForm";
 
-const ListTask = ({ toDoList, saveTasks }) => {
+const ListTask = ({ toDoList, saveTasks, apiData }) => {
   const [selectedOption, setSelectedOption] = useState("all");
   const [isTaskFormVisible, setIsTaskFormVisible] = useState(false);
   const [taskToEdit, setTaskToEdit] = useState(null);
@@ -79,10 +79,11 @@ const ListTask = ({ toDoList, saveTasks }) => {
 
   return (
     <div className="container mt-4 mb-4">
+      {/* {console.log(apiData)} */}
       <div className="card shadow-sm">
         <div className="card-body">
           {isTaskFormVisible && (
-            <AddTaskForm addOrUpdateTask={addOrUpdateTask} taskToEdit={taskToEdit} />
+            <AddTaskForm addOrUpdateTask={addOrUpdateTask} taskToEdit={taskToEdit} apiData={apiData}/>
           )}
           <TaskStatus
             selectedOption={selectedOption}

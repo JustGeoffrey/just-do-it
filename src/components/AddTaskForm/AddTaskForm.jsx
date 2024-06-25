@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from './AddTaskForm.module.css';
 
-const AddTaskForm = ({ addOrUpdateTask, taskToEdit }) => {
+const AddTaskForm = ({ addOrUpdateTask, taskToEdit, apiData }) => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [dueDate, setDueDate] = useState("");
@@ -62,6 +62,7 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit }) => {
           }}
           onInvalid={(e) => {e.target.setCustomValidity('Please enter a title')}}
           required
+          // Consider havving a regex pattern for the title?
           // pattern=""
         />
       </div>
@@ -82,18 +83,30 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit }) => {
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
           required
-          min='2000-01-01'
-          max='3000-12-31'
+          min={minDate}
+          max={maxDate}
         />
       </div>
       <div className="form-group">
         <label>Assigned To</label>
-        <input
+        {/* <input
           type="text"
           className="form-control"
           value={assignedTo}
           onChange={(e) => setAssignedTo(e.target.value)}
-        />
+        /> */}
+        <select
+          type="text"
+          className="form-control"
+          value={assignedTo}
+          onChange={(e) => setAssignedTo(e.target.value)}        
+        >
+          {apiData.info.students.map((student, index) => {
+            return (
+              <option value={student} key={index} >{student}</option>
+            )
+          })}
+        </select>
       </div>
       <div className="form-group">
         <label>Status</label>
