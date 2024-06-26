@@ -30,7 +30,6 @@ function App() {
         throw new Error('A problem occured getting data')
       }
       const data = await response.json()
-      // console.log(data)
       setApiData(data)
       
     }
@@ -58,11 +57,6 @@ function App() {
     <div>
       <Header />
       {!loading ? <ListTask toDoList={toDoList} saveTasks={saveTasks} apiData={apiData} /> : <h1>Loading</h1>}
-      {/* students={apiData.info.students} */}
-      {/* <ListTask toDoList={toDoList} saveTasks={saveTasks} /> */}
-      <div>
-        {/* {console.log(typeof apiData.info.students)} */}
-      </div>
       <Footer />
     </div>
   );

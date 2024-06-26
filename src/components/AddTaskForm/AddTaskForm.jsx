@@ -62,8 +62,6 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit, apiData }) => {
           }}
           onInvalid={(e) => {e.target.setCustomValidity('Please enter a title')}}
           required
-          // Consider havving a regex pattern for the title?
-          // pattern=""
         />
       </div>
       <div className="form-group">
@@ -89,18 +87,18 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit, apiData }) => {
       </div>
       <div className="form-group">
         <label>Assigned To</label>
-        {/* <input
-          type="text"
-          className="form-control"
-          value={assignedTo}
-          onChange={(e) => setAssignedTo(e.target.value)}
-        /> */}
         <select
           type="text"
           className="form-control"
           value={assignedTo}
-          onChange={(e) => setAssignedTo(e.target.value)}        
+          onChange={(e) => {
+            setAssignedTo(e.target.value)
+            e.target.setCustomValidity('')
+          }}
+          onInvalid={(e) => {e.target.setCustomValidity('Please assign this task')}}
+          required        
         >
+          <option value="" disabled selected />
           {apiData.info.students.map((student, index) => {
             return (
               <option value={student} key={index} >{student}</option>
