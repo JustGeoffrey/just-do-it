@@ -8,8 +8,8 @@ const AddTaskForm = ({ addOrUpdateTask, taskToEdit, apiData }) => {
   const [assignedTo, setAssignedTo] = useState("");
   const [status, setStatus] = useState("in-progress");
 
-  const minDate = new Date('January 01, 2000')
-  const maxDate = new Date('December 31, 3000')
+  const minDate = '01/01/2000'
+  const maxDate = '31/12/3000'
 
   useEffect(() => {
     if (taskToEdit) {
