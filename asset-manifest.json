@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/just-do-it/static/css/main.53407920.css",
-    "main.js": "/just-do-it/static/js/main.2f407007.js",
+    "main.js": "/just-do-it/static/js/main.e13ad9f2.js",
     "static/js/453.2e433b3e.chunk.js": "/just-do-it/static/js/453.2e433b3e.chunk.js",
     "static/media/SortsMillGoudy-Regular.ttf": "/just-do-it/static/media/SortsMillGoudy-Regular.63480b60449721659684.ttf",
     "static/media/Header.png": "/just-do-it/static/media/Header.58dd072f140fc7c2cc3b.png",
     "static/media/Footer.png": "/just-do-it/static/media/Footer.b1b029cd819dd7c081f2.png",
     "index.html": "/just-do-it/index.html",
     "main.53407920.css.map": "/just-do-it/static/css/main.53407920.css.map",
-    "main.2f407007.js.map": "/just-do-it/static/js/main.2f407007.js.map",
+    "main.e13ad9f2.js.map": "/just-do-it/static/js/main.e13ad9f2.js.map",
     "453.2e433b3e.chunk.js.map": "/just-do-it/static/js/453.2e433b3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53407920.css",
-    "static/js/main.2f407007.js"
+    "static/js/main.e13ad9f2.js"
   ]
 }
